@@ -1,6 +1,6 @@
 import pika, json
 
-
+# saves file to gridfs and publishes a message to the video queue 
 def upload(f, fs, channel, access):
     try:
         fid = fs.put(f)
